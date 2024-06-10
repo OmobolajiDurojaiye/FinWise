@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinWise - Budget Checker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><span>Fin</span>Wise</a>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="budgetTracker.html">Daily Budget Tracker</a>
+          </li>
+          <li>
+            <a href="">Tax Calculator</a>
+          </li>
+          <li>
+            <a href="">Personal Finance Simulator</a>
+          </li>
+          <li>
+            <button class="theme">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-moon-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="btheading">
+      <h1>Budget Tracker</h1>
+      <p>Track your income and expenses</p>
+    </section>
+
+    <section class="main">
+      <div class="income">
+        <label for="income" class="warn">Enter Your total Income</label> <br />
+        <input type="number" name="income" id="incomeInputed" class="income" />
+        <br />
+        <button class="totalIncome">Add Income</button>
+        <p>Main Income: <span class="income-amount">0000</span></p>
+      </div>
+
+      <div class="budget-Tracker">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Groceries</th>
+              <th>Transportation</th>
+              <th>Entertainment</th>
+              <th>Savings</th>
+              <th>Utilities</th>
+              <th>Housing (Rent/Mortgage)</th>
+              <th>Others</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <div class="calcTotal">
+          <button class="calcExpense">Calculate Total Expense</button>
+        </div>
+        <p class="total-expenses">
+          Total Expenses <span class="expense">0000</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="result">
+      <table>
+        <tr>
+          <th>Total Income</th>
+          <th>Total Expenses</th>
+        </tr>
+        <tr>
+          <td class="totIncome"></td>
+          <td class="totExpense"></td>
+        </tr>
+      </table>
+
+      <p class="advice">
+        Word of Advice:
+        <span
+          style="font-size: 0.5em; font-weight: bolder"
+          class="wordOfAdvice"
+        ></span>
+      </p>
+    </section>
+    <section>
+      <footer>
+        <p>&copy; Copyright FinWise 2024</p>
+      </footer>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
